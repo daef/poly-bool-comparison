@@ -1,6 +1,8 @@
 This is a (very hacky) comparison of various polygon clipping algorithms.
 
-== Method
+[shut up and take me to the damn thing](dissection)
+
+## method
 
 The 'ground truth' to compare against was approximated via a rasterization of
 the polygons (using inkscape) followed by the boolean operations (using graphicsmagick)
@@ -9,20 +11,31 @@ Various implementations try to do the boolean operations on the polygons, the re
 polygons are also translated to svg, rasterized with inkscape and those results are
 finally compared on a pixel basis, using various metrics and graphicsmagick.
 
-== Implementations
+## dir description
 
-dissection contains a small viewer for the results
+[dissection](https://github.com/daef/poly-bool-comparison/tree/master/dissection) contains a small viewer for the results
 
-unisamples contain the fixtures as well as conversion tools
+[unisamples](https://github.com/daef/poly-bool-comparison/tree/master/unisamples) contain the fixtures as well as conversion tools
 
-magic contains the 'ground truth' build using graphicsmagick
+[magick](https://github.com/daef/poly-bool-comparison/tree/master/magick) contains the 'ground truth' build using graphicsmagick
 
-martinez_{cgal,cpp} were build from http://www4.ujaen.es/~fmartin/bop12.zip
+## algorithms
 
-milevski uses https://github.com/w8r/martinez
+martinez_{[cgal](https://github.com/daef/poly-bool-comparison/tree/master/martinez_cgal),[cpp](https://github.com/daef/poly-bool-comparison/tree/master/martinez_cpp)} were build from http://www4.ujaen.es/~fmartin/bop12.zip
 
-rust-geo-booleanop uses https://github.com/21re/rust-geo-booleanop
+[milevski](https://github.com/daef/poly-bool-comparison/tree/master/milevski) uses https://github.com/w8r/martinez
 
-voidqk uses https://www.npmjs.com/package/polybooljs
+[rust-geo-booleanop](https://github.com/daef/poly-bool-comparison/tree/master/rust-geo-booleanop) uses https://github.com/21re/rust-geo-booleanop
 
+[voidqk](https://github.com/daef/poly-bool-comparison/tree/master/voidqk) uses https://www.npmjs.com/package/polybooljs
+
+## dependencies
+
+this is far from packed for re-use, but if you insist, the main dependencies should be node, graphicsmagick and inkscape
+
+## running
+
+to re-run everything try running `./run`... good luck ;)
+
+to update a single algorithm run `./run <dirname>`
 

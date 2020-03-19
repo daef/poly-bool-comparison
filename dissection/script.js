@@ -139,13 +139,13 @@ var CreateContext = function() {
         var row = '<div class="dot"></div>'
         for(let i in samples) {
             let a = samples[i]
-            row += '<div class="dot header" id="polya_'+a+'" title="' +a+ '" style="background-image:url(/unisamples/pngs/'+a+'.png)"></div>'
+            row += '<div class="dot header" id="polya_'+a+'" title="' +a+ '" style="background-image:url(../unisamples/pngs/'+a+'.png)"></div>'
         }
         container.innerHTML += '<div class="row">'+row+'</div>'
         for(let i in samples) {
             let b = samples[i]
             const dataa = data.filter(entry => entry.b == b)
-            row = '<div class="dot header" id="polyb_'+b+'" title="' +b+ '" style="background-image:url(/unisamples/pngs/'+b+'.png)"></div>'
+            row = '<div class="dot header" id="polyb_'+b+'" title="' +b+ '" style="background-image:url(../unisamples/pngs/'+b+'.png)"></div>'
             for(let j in samples) {
                 let a = samples[j]
                 const dataab = dataa.filter(entry => entry.a == a)
@@ -155,7 +155,7 @@ var CreateContext = function() {
 
                 var col = a == b ? 'gray' : val
 
-                row += '<div class="dot" data-poly-a="'+a+'" data-poly-b="'+b+'" title="'+ JSON.stringify(dataab).replace(/"/g, "'").replace(/,/g, "\n")+ '" style="background-color:'+col+';background-image:url(/'+this.combatant+'/pngs/' + a  + '_' + b + '_' +this.op+ '.png)"></div>'
+                row += '<div class="dot" data-poly-a="'+a+'" data-poly-b="'+b+'" title="'+ JSON.stringify(dataab).replace(/"/g, "'").replace(/,/g, "\n")+ '" style="background-color:'+col+';background-image:url(../'+this.combatant+'/pngs/' + a  + '_' + b + '_' +this.op+ '.png)"></div>'
             }
             container.innerHTML += '<div class="row">'+row+'</div>'
         }

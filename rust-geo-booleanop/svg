@@ -1,0 +1,16 @@
+#!/bin/bash
+
+par=15
+
+rm -rf svgs
+mkdir -p svgs
+
+for r in results/* ; do
+    while [ "`jobs -r | wc -l`" = "${1:-$par}" ] ; do sleep .1 ; done
+    br=`basename $r`
+    echo $br
+    node svg.js $r >svgs/$br.svg &
+done
+
+wait
+

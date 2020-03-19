@@ -1,0 +1,34 @@
+#!/bin/bash
+
+metrics="MAE MSE PAE PSNR RMSE"
+combatants="martinez_cgal martinez_cpp milevski podloznuk voidqk rust-geo-booleanop"
+
+for who in ${1:-$combatants} ; do
+    find ./$who -maxdepth 1 -name '*.metric' -delete
+done
+
+for truth in magick/pngs/*.png ; do
+    png=$(basename $truth)
+    for who in ${1:-$combatants} ; do
+        id=${png%.png}_${who/_/+}
+        subject=$who/pngs/$png
+        if [ ! -f $subject ] ; then
+            echo MISSING $id
+            continue
+        fi
+        echo $id
+        for metric in $metrics ; do
+            (
+                echo -n "[\"${id}_${metric}\", \""
+                gm compare -metric $metric $subject $truth |\
+                    grep Total | cut -b 11- | cut -d\  -f1 | tr -d \\n
+                echo "\"]"
+            ) >> $who/${metric}.metric &
+        done
+    done
+    wait
+done
+
+rm comparison.json
+find . -maxdepth 2 -name '*.metric' | xargs cat >>comparison.json
+

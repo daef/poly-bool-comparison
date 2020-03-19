@@ -1,0 +1,9 @@
+#!/bin/bash
+rm -rf ../martinez
+mkdir -p ../martinez
+for f in ../scaled/* ; do
+    fn=`basename $f`
+    node fmtmartinez.js $f >../martinez/$fn
+done
+
+

@@ -1,0 +1,9 @@
+#!/bin/bash
+rm -rf ../scaled
+mkdir -p ../scaled
+for f in ../orig/* ; do
+    fn=`basename $f`
+    node scale.js $f >../scaled/$fn
+done
+
+

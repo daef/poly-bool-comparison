@@ -1,0 +1,5 @@
+{
+    "dependencies": {
+        "json-stringify-pretty-compact": "^2.0.0"
+    }
+}

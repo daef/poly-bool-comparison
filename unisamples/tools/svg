@@ -1,0 +1,10 @@
+#!/bin/bash
+
+rm -rf ../svgs
+mkdir -p ../svgs
+for r in ../scaled/* ; do
+    br=`basename $r`
+    echo $br
+    node svg.js $r >../svgs/$br.svg
+done
+

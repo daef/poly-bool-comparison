@@ -1,0 +1,23 @@
+#!/bin/bash
+
+rm -rf examples
+cp -r ../unisamples/scaled examples
+
+rm -rf results
+mkdir -p results
+
+for a in examples/* ; do
+    for b in examples/* ; do
+        if [ "x$a" = "x$b" ] ; then continue ; fi
+        ba=`basename $a`
+        bb=`basename $b`
+        for m in I U X D ; do
+            fn=${ba}_${bb}_${m}
+            echo $fn
+            node bool.js $a $b $m >results/${fn}
+        done
+    done
+done
+
+find ./results -type f -size 0 -delete
+

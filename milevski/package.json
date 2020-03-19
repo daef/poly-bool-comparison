@@ -1,0 +1,6 @@
+{
+    "dependencies": {
+        "geojson-to-svg": "^1.0.3",
+        "martinez-polygon-clipping": "git+ssh://git@github.com/w8r/martinez.git"
+    }
+}

@@ -1,0 +1,35 @@
+#!/bin/bash
+
+echo ========================
+
+echo === before
+ls examples
+rm -rf examples
+
+echo === after rm
+ls examples
+cp -r ../unisamples/pngs examples
+
+echo === after recursive copy
+ls examples
+
+echo ========================
+
+rm -rf pngs
+mkdir -p pngs
+
+for a in examples/* ; do
+    for b in examples/* ; do
+        if [ "x$a" = "x$b" ] ; then continue ; fi
+        ba=`basename ${a%.png}`
+        bb=`basename ${b%.png}`
+        fn=${ba}_${bb}
+        echo $fn
+        gm composite -compose in $a $b pngs/${fn}_I.png &
+        gm composite -compose over $a $b pngs/${fn}_U.png &
+        gm composite -compose xor $a $b pngs/${fn}_X.png &
+        gm composite -compose out $a $b pngs/${fn}_D.png &
+        wait
+    done
+done
+

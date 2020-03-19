@@ -1,0 +1,25 @@
+#!/bin/bash
+
+pushd unisamples/tools
+echo scale
+./scale >/dev/null
+echo formats
+./fmtmartinez >/dev/null
+echo svg
+./svg >/dev/null
+echo png
+./png >/dev/null
+popd
+
+for f in ${1:-*}/run ; do
+    pushd `dirname $f`
+    /usr/bin/time -o runtime.txt ./run &>runlog.txt
+    echo svg
+    /usr/bin/time -o svgtime.txt ./svg &>svglog.txt
+    echo png
+    /usr/bin/time -o pngtime.txt ./png &>pnglog.txt
+    popd
+done
+
+./compare $1
+

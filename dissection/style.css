@@ -1,0 +1,46 @@
+body, html {
+    background-color:darkgray;
+}
+#content>div {
+   display:inline-block;
+   vertical-align:top;
+}
+#info {
+    margin-top:42px;
+    margin-left:23px;
+    text-align: center;
+}
+#info>img {
+    border: 1px solid black;
+    height:100px;
+}
+#info>span {
+    font-size:42px;
+}
+.polya {
+    background: cyan;
+}
+.polyb {
+    background: magenta;
+}
+.row {
+   margin: 0;
+   padding: 0;
+   line-height:0;
+}
+
+.dot {
+   width: 36px;
+   height: 36px;
+   margin: 0;
+   padding: 0;
+   display:inline-block;
+   background-size:cover;
+}
+
+#blink {
+    float: right;
+    height: 569px !important;
+    image-rendering: crisp-edges;
+}
+

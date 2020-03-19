@@ -1,0 +1,13 @@
+target/
+
+**/*.rs.b
+*.iml
+
+.idea/
+.vscode/
+
+# Files generated from debugging
+test_cases.pdf
+*.geojson.generated
+*.log
+debug.csv

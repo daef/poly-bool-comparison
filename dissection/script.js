@@ -1,5 +1,5 @@
 var request = new XMLHttpRequest();
-request.open('GET', '/comparison.json', true);
+request.open('GET', '../comparison.json', true);
 
 document.data = []
 

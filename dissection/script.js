@@ -171,12 +171,12 @@ var CreateContext = function() {
                 }
                 a = e.target.dataset.polyA
                 b = e.target.dataset.polyB
-                polya.src = '/unisamples/pngs/' + a + '.png'
-                polyb.src = '/unisamples/pngs/' + b + '.png'
+                polya.src = '../unisamples/pngs/' + a + '.png'
+                polyb.src = '../unisamples/pngs/' + b + '.png'
                 var url = e.target.style.backgroundImage.slice(5).slice(0,-2)
                 sample.src = url
                 sample.style.backgroundColor = e.target.style.backgroundColor
-                truth.src = '/magick/' + url.slice(url.indexOf('/', 1))
+                truth.src = '../magick/' + url.slice(url.indexOf('/', 1))
                 ah = document.getElementById('polya_' + a)
                 bh = document.getElementById('polyb_' + b)
                 ah.classList.add('polya')

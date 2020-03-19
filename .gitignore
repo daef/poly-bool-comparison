@@ -1,16 +1,5 @@
-*.metric
 *.txt
 
 package-lock.json
 node_modules/
-
-examples/
-results/
-svgs/
-pngs/
-
-unisamples/martinez/
-unisamples/podloznuk/
-unisamples/scaled/
-
 

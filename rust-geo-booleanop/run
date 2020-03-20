@@ -1,5 +1,11 @@
 #!/bin/bash
 
+cargo build --release
+if [ $? -ne 0 ]; then
+    echo "Build failed, aborting."
+    exit 1
+fi
+
 rm -rf examples
 cp -r ../unisamples/scaled examples
 
@@ -14,7 +20,7 @@ for a in examples/* ; do
         for m in I U X D ; do
             fn=${ba}_${bb}_${m}
             echo $fn
-            ./daef $a $b -${m,,} >results/${fn}
+            target/release/rust-geo-booleanop-experiment $a $b -${m,,} >results/${fn}
         done
     done
 done

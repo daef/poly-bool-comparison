@@ -11,3 +11,5 @@ test_cases.pdf
 *.geojson.generated
 *.log
 debug.csv
+
+Cargo.lock

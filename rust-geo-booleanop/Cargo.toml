@@ -1,0 +1,12 @@
+[package]
+name = "rust-geo-booleanop-experiment"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+
+geo = "0.12"
+geo-booleanop = { git = "https://github.com/21re/rust-geo-booleanop", rev = "7f522fd" }
+geo-booleanop-tests = { git = "https://github.com/21re/rust-geo-booleanop", rev = "7f522fd" }
+serde_json = { version = "1.0.44", features = ["arbitrary_precision"] }
+clap = "2.3.3"

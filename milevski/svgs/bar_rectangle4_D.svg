@@ -1,1 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 500 500"><path style="fill:#000000" d="M 25,25 75,25 75,75 25,25 M 225,25 325,25 325,212.5 225,212.5 225,25"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 500 500"><path style="fill:#000000" fill-rule="evenodd" d="M 25,25 75,25 75,75 25,25 M 225,25 325,25 325,212.5 225,212.5 225,25"/></svg>

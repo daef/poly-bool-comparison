@@ -1,1 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 500 500"><path style="fill:#000000" d="M 150 300 L 60 120 L 90 120 L 150 240 L 180 180 L 180 240"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 500 500"><path style="fill:#000000" fill-rule="evenodd" d="M 150 300 L 60 120 L 90 120 L 150 240 L 180 180 L 180 240"/></svg>

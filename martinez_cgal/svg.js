@@ -10,7 +10,7 @@ const nextline = () => data[line++]
 const npoly = +nextline()
 
 w('<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 500 500">')
-w('<path style="fill:#000000" d="')
+w('<path style="fill:#000000" fill-rule="evenodd" d="')
 
 let state = 'M '
 for(let i=0;i<npoly;i++) {

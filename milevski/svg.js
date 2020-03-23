@@ -6,7 +6,7 @@ const w = (x) => process.stdout.write(x)
 var data = JSON.parse(fs.readFileSync(args[0], 'utf8'))
 
 w('<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 500 500">')
-w('<path style="fill:#000000" d="')
+w('<path style="fill:#000000" fill-rule="evenodd" d="')
 
 let state = 'M '
 for(let i in data) {

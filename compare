@@ -1,7 +1,7 @@
 #!/bin/bash
 
 metrics="MAE MSE PAE PSNR RMSE"
-combatants="martinez_cgal martinez_cpp milevski podloznuk voidqk rust-geo-booleanop"
+combatants="martinez_cgal martinez_cpp milevski podloznuk voidqk rust-geo-booleanop keller"
 
 for who in ${1:-$combatants} ; do
     find ./$who -maxdepth 1 -name '*.metric' -delete

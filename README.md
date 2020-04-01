@@ -27,8 +27,6 @@ martinez_{[cgal](https://github.com/daef/poly-bool-comparison/tree/master/martin
 
 [rust-geo-booleanop](https://github.com/daef/poly-bool-comparison/tree/master/rust-geo-booleanop) uses https://github.com/21re/rust-geo-booleanop
 
-[keller](https://github.com/daef/poly-bool-comparison/tree/master/keller) uses https://github.com/bluenote10/rust-geo-booleanop
-
 [voidqk](https://github.com/daef/poly-bool-comparison/tree/master/voidqk) uses https://www.npmjs.com/package/polybooljs
 
 ## dependencies

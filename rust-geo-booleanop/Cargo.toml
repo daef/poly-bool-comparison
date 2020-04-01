@@ -6,7 +6,7 @@ edition = "2018"
 [dependencies]
 
 geo = "0.12"
-geo-booleanop = { git = "https://github.com/21re/rust-geo-booleanop", rev = "7f522fd" }
-geo-booleanop-tests = { git = "https://github.com/21re/rust-geo-booleanop", rev = "7f522fd" }
+geo-booleanop = { git = "https://github.com/21re/rust-geo-booleanop", rev = "381ac406308918c3f758986c493cc50731e545ec" }
+geo-booleanop-tests = { git = "https://github.com/21re/rust-geo-booleanop", rev = "381ac406308918c3f758986c493cc50731e545ec" }
 serde_json = { version = "1.0.44", features = ["arbitrary_precision"] }
 clap = "2.3.3"

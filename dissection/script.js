@@ -31,7 +31,7 @@ request.onload = function() {
             if (tmp > highest) highest = tmp;
         }
 
-        const combatants = ['martinez_cgal', 'martinez_cpp', 'milevski', 'voidqk', 'rust-geo-booleanop']
+        const combatants = ['pathkit','martinez_cgal', 'martinez_cpp', 'milevski', 'voidqk', 'rust-geo-booleanop']
         const delta = highest - lowest
         const step = (delta * 1.001) / n
         let hists = {}
@@ -107,7 +107,7 @@ var CreateContext = function() {
     this.metrics = ['MAE', 'MSE', 'PAE', 'PSNR', 'RMSE']
     this.metric = 'PAE'
 
-    this.combatants = ['martinez_cgal', 'martinez_cpp', 'milevski', 'voidqk', 'rust-geo-booleanop']
+    this.combatants = ['pathkit','martinez_cgal', 'martinez_cpp', 'milevski', 'voidqk', 'rust-geo-booleanop']
     this.combatant = 'rust-geo-booleanop'
 
     this.show = function() {

@@ -2,22 +2,25 @@
   "name": "poly-bool-comparison",
   "version": "1.0.0",
   "description": "This is a (very hacky) comparison of various polygon clipping algorithms.",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "setup": "lerna run setup"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/martin19/poly-bool-comparison.git"
+    "url": "git+https://github.com/daef/poly-bool-comparison.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/martin19/poly-bool-comparison/issues"
+    "url": "https://github.com/daef/poly-bool-comparison/issues"
   },
-  "homepage": "https://github.com/martin19/poly-bool-comparison#readme",
+  "homepage": "https://github.com/daef/poly-bool-comparison#readme",
   "dependencies": {
     "express": "^4.17.1",
     "json-stringify-pretty-compact": "^3.0.0"
+  },
+  "devDependencies": {
+    "@lerna-lite/cli": "^1.5.1",
+    "@lerna-lite/run": "^1.5.1"
   }
 }

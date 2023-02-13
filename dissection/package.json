@@ -1,0 +1,13 @@
+{
+  "name": "dissection",
+  "version": "1.0.0",
+  "description": "Quick webserver for debugging",
+  "scripts": {
+    "setup": "npm install && npm run create-links",
+    "clean": "rm ./magick ./martinez_cgal ./martinez_cpp ./milevski ./pathkit ./rust-geo-booleanop ./unisamples ./voidqk",
+    "create-links": "ln -sf ../magick && ln -sf ../martinez_cgal && ln -sf ../martinez_cpp && ln -sf ../milevski && ln -sf ../pathkit && ln -sf ../rust-geo-booleanop && ln -sf ../unisamples && ln -sf ../voidqk",
+    "dev": "npx http-server"
+  },
+  "dependencies": {
+  }
+}

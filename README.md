@@ -35,6 +35,14 @@ this is far from packed for re-use, but if you insist, the main dependencies sho
 
 ## running
 
+install LTS versions of [npm](https://www.npmjs.com/) and [node.js](https://nodejs.org/en/)
+
+now run these commands inside the poly-bool-comparison directory
+```
+npm install
+npm run setup
+```
+
 to re-run everything try running `./run`... good luck ;)
 
 to update a single algorithm run `./run <dirname>`

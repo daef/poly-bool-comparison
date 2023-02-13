@@ -1,5 +1,11 @@
 {
-    "dependencies": {
-        "polybooljs": "^1.2.0"
-    }
+  "name": "voidqk",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "setup": "npm install"
+  },
+  "dependencies": {
+    "polybooljs": "^1.2.0"
+  }
 }

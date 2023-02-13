@@ -1,6 +1,11 @@
 {
-    "dependencies": {
-        "geojson-to-svg": "^1.0.3",
-        "martinez-polygon-clipping": "git+ssh://git@github.com/w8r/martinez.git"
-    }
+  "name": "milevski",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "setup": "npm install"
+  },
+  "dependencies": {
+    "martinez-polygon-clipping": "^0.7.3"
+  }
 }

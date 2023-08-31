@@ -33,6 +33,10 @@ martinez_{[cgal](https://github.com/daef/poly-bool-comparison/tree/master/martin
 
 this is far from packed for re-use, but if you insist, the main dependencies should be node, graphicsmagick and inkscape
 
+graphicsmagick can be downloaded (source) and compiled into a set of command line utilities. See http://www.graphicsmagick.org/README.html
+
+inkscape can be downloaded and installed. See https://inkscape.org
+
 ## running
 
 install LTS versions of [npm](https://www.npmjs.com/) and [node.js](https://nodejs.org/en/)

@@ -1,0 +1,15 @@
+{
+  "command": {
+    "publish": {
+      "conventionalCommits": true
+    }
+  },
+  "packages": [
+    "dissection",
+    "milevski",
+    "pathkit",
+    "unisamples",
+    "voidqk"
+  ],
+  "version": "0.0.0"
+}

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 rm -rf ../martinez
 mkdir -p ../martinez
 for f in ../scaled/* ; do

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 metrics="MAE MSE PAE PSNR RMSE"
 combatants="martinez_cgal martinez_cpp milevski voidqk rust-geo-booleanop"

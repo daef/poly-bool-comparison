@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 par=15
 width=100
@@ -10,7 +10,7 @@ for r in ../svgs/* ; do
     while [ "`jobs -r | wc -l`" = "${1:-$par}" ] ; do sleep .01 ; done
     br=`basename ${r%.svg}`
     echo $br
-    inkscape --export-png ../pngs/${br}.png -w ${2:-$width} -h ${3:-$height} -y 0 $r &
+    inkscape --export-filename ../pngs/${br}.png -w ${2:-$width} -h ${3:-$height} -y 0 $r &
 done
 
 wait

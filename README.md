@@ -1,6 +1,6 @@
 This is a (very hacky) comparison of various polygon clipping algorithms.
 
-[shut up and take me to the damn thing](dissection)
+[shut up and take me to the damn thing](https://daef.github.io/poly-bool-comparison/dissection/)
 
 ## method
 
